@@ -1,0 +1,15 @@
+.phrase {
+  color: rgb(83, 139, 224);
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.ph2 {
+  color: rgb(94, 204, 141);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.foter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(229, 247, 187);
+}
