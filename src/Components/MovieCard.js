@@ -1,13 +1,13 @@
 import React from 'react'
 import './MoviesList.css';
-const MovieCard = ({movie}) => {
+const MovieCard = ({movie, handleName}) => {
     return (
         <div>
   <div className="wrapper">
     <div className="main_card">
       <div className="card_left">
         <div className="card_datails">
-          <h1>{movie.name}</h1>
+          <h1 onClick={() => handleName(movie.name)}>{movie.name}</h1>
           <div className="card_cat">
             <p className="PG">{movie.rating}</p>
             <p className="year">{movie.date}</p>
@@ -49,7 +49,8 @@ const MovieCard = ({movie}) => {
   </div>
   {/* FOLLOW */}
   <a className="Follow" href="https://codepen.io/ZaynAlaoudi/" target="blank_" />
-</div>
+  
+  </div>
     );
 }
 
